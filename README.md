@@ -1,4 +1,4 @@
-# 🎈 Blank app template
+# Dashboard Checklist ESP32
 
 A simple Streamlit app template for you to modify!
 
