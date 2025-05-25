@@ -57,4 +57,4 @@ def gerar_dados(base, quantidade=50):
 dados_expandidos = gerar_dados(data, quantidade=500)
 
 invoice_df = pd.DataFrame(dados_expandidos)[colunas_ordenadas]
-st.dataframe(data=invoice_df)
+st.dataframe(data=invoice_df, hide_index=True)

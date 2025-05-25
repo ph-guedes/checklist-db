@@ -23,6 +23,6 @@ colunas_ordenadas = [
 invoice_df = pd.DataFrame(data)[colunas_ordenadas]
 
 st.header("UID's")
-st.dataframe(data=invoice_df)
+st.dataframe(data=invoice_df, hide_index=True)
 
 st.header("UID Logs")
