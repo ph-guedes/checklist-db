@@ -1,7 +1,6 @@
 import random
 import streamlit as st
 import pandas as pd
-import streamlit_shadcn_ui as ui
 
 # Dados
 data = [

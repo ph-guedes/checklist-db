@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import streamlit_shadcn_ui as ui
 
 data = [
     {
@@ -40,7 +39,4 @@ colunas_ordenadas = [
 invoice_df = pd.DataFrame(data)[colunas_ordenadas]
 
 st.header("Lista de Operadores")
-with st.container(border=True):
-    st.markdown('<div style="overflow-x:auto; max-height:500px;">', unsafe_allow_html=True)
-    ui.table(data=invoice_df)
-    st.markdown('</div>', unsafe_allow_html=True)
+st.dataframe(data=invoice_df)
